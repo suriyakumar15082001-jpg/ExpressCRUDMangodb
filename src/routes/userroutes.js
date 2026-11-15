@@ -3,9 +3,9 @@ import {fetch,create,update,deleteuser} from "../controller/usercontroller.js";
 
 const router = express.Router();
 
-router.get("/getstudents", fetch);
-router.post("/createstudent", create);
-router.put("/updatestudent/:id", update);
-router.delete("/deletestudent/:id", deleteuser);
+router.get("/getuser", fetch);
+router.post("/createuser", create);
+router.put("/updateuser/:id", update);
+router.delete("/deleteuser/:id", deleteuser);
 
 export default router;
